@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max's Form Page</title>
+    <link rel="stylesheet" href="/styles.css">
+    
+</head>
+<body>
+    <form class="masterForm">
+        <div class="container">
+            <div class="sidebar">
+                <div class="imageDiv">
+                </div>
+                <div class="logo">
+                    <img src ="/logo.png">
+                    <p class= "gameName">Buster's Quest</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="companyDescription">
+                    <p class="description">Sign up now to start your adventure</p>
+                </div>
+
+                <div class="middle">
+
+                    <div class="form">
+                        <label class = "topLabels" for="name">Character Name *</label>
+                        <input type="text" name="name" id="name" placeholder="Character Name*" required>
+                    </div>
+
+                    <div class="form">
+                        <label class = "topLabels" for="email">Email Address *</label>
+                        <input type="email" name="email" id="email" placeholder="Email Address*" required>
+                    </div>
+
+                    <div class="form">
+                        <label class = "topLabels" for="password">Password *</label>
+                        <input type="password" name="password" id="password" minlength="5" maxlength="20" placeholder="5 - 20 Characters*" required>
+                    </div>
+
+                    <div class="form">
+                        <label class = "topLabels" for="passwordConfrim">Confirm Password *</label>
+                        <input type="password" name="passwordConfirm" id="passwordConfirm" minlength="5" maxlength="20" placeholder="5 - 20 Characters*" required>
+                        <span id="passwordError" class="error"></span>
+
+                    </div>
+                </div>
+                
+                <div class="bottom">
+                    <div class="classTextTitle">
+                    <p class="classText">Choose your class</p>
+                    </div>
+                    <div class="buttons">
+                    <label for="warrior" class="bottomLabels">
+                        <input type="radio" name="radioButton" id="warrior" class="btnInput" style="display: none" checked required>
+                        <span>Warrior</span>
+                    </label>
+                    <label for="ranger" class="bottomLabels">
+                        <input type="radio" name="radioButton" id="ranger" class="btnInput" style="display: none" required>
+                        <span>Ranger</span>
+                    </label>
+                    <label for="mage" class="bottomLabels">
+                        <input type="radio" name="radioButton" id="mage" class="btnInput" style="display: none" required>
+                        <span>Mage</span>
+                    </label>
+                    </div>
+                    <button type="submit" class="submitButton" id="submitButton">Submit</button>
+                </div>
+                <p class="login">Already a member? Click <a>here</a> to login.</p>
+                </div>      
+            </div>
+        </div>
+    </form>
+</body>
+<script src="/code.js" defer></script>
+</html>

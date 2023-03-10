@@ -1,0 +1,166 @@
+body {
+    justify-content: center;
+    align-items: center;
+    background-color: #572f73;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: "GameFont";
+    src: url("/JungleFeverNF.ttf") format("truetype");
+}
+
+.colors {
+    color: #8C3A6F, #572f73, #2D5873, #71D9C6, #8CBF3F;
+}
+
+.container, .sidebar, .content, .companyDescription, .bottom {
+    background-color: #2D5873;
+    border-radius: 24px;
+}
+
+.container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    margin-left: 50px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+}
+
+.content {
+    width: 400px;
+    height: 750px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.imageDiv {
+    background-image: url("/backgroundImage.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+    margin-top: 50px;
+    border: 8px solid #2D5873;
+    margin-bottom: 0px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.gameName, .classText {
+    margin: 0px;
+    font-family: GameFont;
+    color: white;
+}
+.description {
+    font-family: GameFont;
+    color: white;
+    font-size: 36px;
+}
+.gameName {
+    font-size: 36px;
+}
+
+.companyDescription {
+    display:flex;
+    border: 3px solid transparent;
+    height: 100px;
+    margin-top: 57px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-shadow: black 12px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+input {
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 36px;
+    font-size: 12px;
+}
+
+input::placeholder {
+    padding-left: 10px;
+}
+
+.topLabels {
+    color: white;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.bottom {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid transparent;
+    padding: 12px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomLabels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 115px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #71D9C6;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.bottomLabels input[type="radio"]:checked + span {
+    color: black;
+    font-size: 24px;
+    text-decoration-line: underline;
+}
+
+.login {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 0px;
+    margin: 3px;
+    font-size: 16px;
+}
+a {
+    text-decoration-line: underline;
+}
+.error {
+    color: red;
+    text-align: center;
+    font-weight: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+}
